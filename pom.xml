@@ -41,15 +41,27 @@
 <!--		for frontEnd-->
 		<!-- Frontend dependencies -->
 		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat</artifactId>
-			<version>11.0.0-M18</version>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>javax.servlet</groupId>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jasper</artifactId>
+			<version>11.0.0-M18</version>
+		</dependency>
+
+		<dependency>
+			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId><!-- Corrected groupId -->
 			<version>1.2</version>
 		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>bootstrap</artifactId>
