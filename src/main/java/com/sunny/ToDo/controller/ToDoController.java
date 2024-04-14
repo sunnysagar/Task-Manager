@@ -17,7 +17,7 @@ public class ToDoController {
     @Autowired
     private ToDoSer service;
 
-    @GetMapping({"/","viewToDoList"})
+    @GetMapping({"/", "/viewToDoList"})
     public String viewAllToDoItems(Model model, @ModelAttribute("message") String message){
         // to show all existing item on our UI
         model.addAttribute("list", service.getAllToDoItems());
@@ -61,13 +61,14 @@ public class ToDoController {
 
     @GetMapping("/editToDoItem/{id}")
     public String editToDoItem(@PathVariable Long id, Model model){
-        model.addAttribute("todo", service.getToDoItemById(id));
+        ToDo todo = service.getToDoItemById(id);
+        model.addAttribute("todo", todo);
 
         return "EditToDoItem";
 
     }
 
-    @PostMapping("/editSaveToDOItem")
+    @PostMapping("/editSaveToDoItem")
     public String editSaveToDoItem(ToDo todo, RedirectAttributes redirectAttributes){
         if (service.saveorUpdateToDoItem(todo)){
             redirectAttributes.addFlashAttribute("message", "edit success");
