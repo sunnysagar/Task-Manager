@@ -12,11 +12,11 @@ Java Spring Boot To-Do App with MySQL: Secure Task Management, Collaboration, an
 * Allow to update & change to-do list like deadline etc.
 * Allow to delete the list.
 
-  ## Technologies
-  * Java
-  * Spring Boot
-  * My SQL
-  * HTML
-  * CSS
-  * Javascript
+## Technologies
+* Java
+* Spring Boot
+* My SQL
+* HTML
+* CSS
+* Javascript
 
