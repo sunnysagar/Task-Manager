@@ -1,4 +1,4 @@
-# To-Do
+# Task-Manager
 Java Spring Boot To-Do App with MySQL: Secure Task Management, Collaboration, and Data Visualization
 ## About
 * To-Do List Management: Developed a fully functional to-do list application using Java and Spring Boot, allowing users to create, update, delete, and prioritize tasks.
